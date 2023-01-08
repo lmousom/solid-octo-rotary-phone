@@ -4,12 +4,12 @@ async function captureFingerprintScan() {
     challenge: new Uint8Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]),
     rp: {
       name: 'Example RP',
-      id: 'example.com',
+      id: 'mousom.in',
     },
     user: {
       id: new Uint8Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]),
-      name: 'john.doe@example.com',
-      displayName: 'John Doe',
+      name: 'latifulmousom@gmail.com',
+      displayName: 'Latiful Mousom',
     },
     pubKeyCredParams: [
       {
@@ -30,6 +30,7 @@ async function captureFingerprintScan() {
 }
 captureFingerprintScan().then(data => {
   console.log(data)
+  alert(data);
 }).catch(err => {
   console.log(err)
 })
